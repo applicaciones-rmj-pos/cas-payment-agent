@@ -105,7 +105,7 @@ public class XMORMaster{
                                                 " AND sSourceCd = "  + SQLUtil.toSQL(fsSourceCd));
         
         ResultSet loRS = poGRider.executeQuery(lsSQL);
-        
+        System.out.println(lsSQL);
         try {
             if (loRS.next())
                 return loadTransaction(loRS.getString("sTransNox"));
