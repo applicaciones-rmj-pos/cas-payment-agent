@@ -99,14 +99,14 @@
                                     <TextField fx:id="txtClientNm" editable="false" focusTraversable="false" text="Michael Cuison" GridPane.columnIndex="1" GridPane.columnSpan="3" />
                                     <TextField fx:id="txtAddressx" editable="false" focusTraversable="false" layoutX="80.0" layoutY="11.0" text="027 Pogo grande, Dagupan City Pangasinan" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="1" />
                                     <TextField fx:id="txtTINumber" editable="false" focusTraversable="false" layoutX="80.0" layoutY="41.0" text="000-000-000-000" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="2" />
-                                    <TextField fx:id="txtBusStyle" layoutX="80.0" layoutY="71.0" text="Stock trading" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="3" />
-                                    <CheckBox fx:id="chkSCPWD" focusTraversable="false" mnemonicParsing="false" text="SC/PWD/OSCA/Diplomat" GridPane.columnSpan="2" GridPane.rowIndex="4" />
+                                    <TextField fx:id="txtBusStyle" editable="false" layoutX="80.0" layoutY="71.0" text="Stock trading" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="3" />
+                                    <CheckBox fx:id="chkSCPWD" disable="true" focusTraversable="false" mnemonicParsing="false" text="SC/PWD/OSCA/Diplomat" GridPane.columnSpan="2" GridPane.rowIndex="4" />
                                     <Label layoutX="10.0" layoutY="104.0" text="ID #" GridPane.columnIndex="2" GridPane.rowIndex="4">
                                        <font>
                                           <Font name="Arial" size="13.0" />
                                        </font>
                                     </Label>
-                                    <TextField fx:id="txtSCPWDIDx" focusTraversable="false" layoutX="95.0" layoutY="98.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                                    <TextField fx:id="txtSCPWDIDx" disable="true" focusTraversable="false" layoutX="95.0" layoutY="98.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
                                  </children>
                               </GridPane>
                               <ImageView fitHeight="60.0" fitWidth="65.0" layoutX="33.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">

@@ -653,7 +653,9 @@ public class MainController implements Initializable {
         String lsSQL = "SELECT" +
                             "  a.sClientID" + 
                             ", a.sClientNm" + 
-                            ", CONCAT(b.sHouseNox, ' ', b.sAddressx, ' ', c.sTownName, ' ', c.sZippCode, ' ', d.sProvName) xAddressx" + 
+                            ", CONCAT(b.sHouseNox, ' ', b.sAddressx, ' ', c.sTownName, ' ', c.sZippCode, ' ', d.sProvName) xAddressx" +
+                            ", IFNULL(a.sAddlInfo,'') sAddlInfo" + 
+                            ", IFNULL(a.sTaxIDNox,'') sTaxIDNox" +  
                         " FROM Client_Master a" +
                             " LEFT JOIN Client_Address b" + 
                                 " ON a.sClientID = b.sClientID" +
@@ -673,6 +675,8 @@ public class MainController implements Initializable {
             loRS.first();
             txtClientNm.setText(loRS.getString("sClientNm"));
             txtAddressx.setText(loRS.getString("xAddressx"));
+            txtTINumber.setText(loRS.getString("sTaxIDNox"));
+            txtBusStyle.setText(loRS.getString("sAddlInfo"));
         } catch (SQLException e) {
             ShowMessageFX.Error(e.getMessage(), pxeModuleName, "Please inform MIS Department.");
             System.exit(1);
